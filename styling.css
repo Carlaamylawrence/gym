@@ -101,3 +101,15 @@
 .nav-link:hover {
   color: #c50a0a;
 }
+
+.member-card{
+  border: grey 2px solid;
+}
+
+.member-card:hover{
+  background: linear-gradient(
+      0deg,
+      rgba(19, 1, 1, 0.979),
+      rgba(3, 1, 1, 0.425)
+    )
+}
