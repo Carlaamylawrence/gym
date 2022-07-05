@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 #landing{
     background: linear-gradient(
       0deg,
@@ -83,7 +88,11 @@
 
 
 #specials {
-  background-color: #fffaf3;
+  background-color:#1b1d20;
+  color: white;
+}
+.nav-pills{
+  color: #c50a0a;
 }
 .nav-pills .nav-link.active {
   color: white;
@@ -112,4 +121,47 @@
       rgba(19, 1, 1, 0.979),
       rgba(3, 1, 1, 0.425)
     )
+}
+#trainers{
+  min-height: 60vh;
+}
+.staff-card{
+  height: 300px;
+  max-width: 190px;
+  background-color: #1b1d20;
+  box-shadow: #fffaf3 1px 1px 2px 0.87%;
+}
+
+.staff-card:hover{
+  transform:translateY(4px) ;
+}
+.trainer-details{
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
+.trainer-socials{
+  display: flex;
+  justify-content: center;
+
+  color: white;
+}
+li{
+  list-style: none;
+  padding: 1rem;
+
+}
+
+.fa-facebook:hover{
+  color: rgba(54, 54, 201, 0.57);
+}
+
+.fa-instagram:hover{
+  color: #bc2a8d;
+}
+
+
+.fa-twitter:hover{
+  color: #1DA1F2;
 }
