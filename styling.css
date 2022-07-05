@@ -134,6 +134,9 @@ body {
 
 .staff-card:hover{
   transform:translateY(4px) ;
+background: #1b1d20;
+box-shadow:  20px 20px 32px #1c1616,
+             -20px -20px 32px #2e2424;
 }
 .trainer-details{
   display: flex;
