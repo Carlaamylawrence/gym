@@ -15,7 +15,9 @@ body {
 .navbar-dark .navbar-nav .nav-link {
   color: #dc3545;
   font-family: 'Anton', sans-serif;
+
 }
+
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
   color: #fff;
   text-decoration:  #dc3545 underline;
@@ -55,6 +57,11 @@ h2{
   font-family: Open Sans;
 } */
 
+.responsive{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
 .card-container{
   perspective: 900px;
   margin-right: 20px;
