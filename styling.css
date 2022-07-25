@@ -12,7 +12,14 @@ html,
 body {
   overflow-x: hidden;
 }
-
+.navbar-dark .navbar-nav .nav-link {
+  color: #dc3545;
+  font-family: 'Anton', sans-serif;
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+  color: #fff;
+  text-decoration:  #dc3545 underline;
+}
 #landing{
     background: linear-gradient(
       0deg,
