@@ -7,6 +7,9 @@
     <title>HUGEGym</title>
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e67a0b83aa.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./styling.css">
@@ -56,11 +59,11 @@
         <div class="landing-container d-flex flex-column justify-content-center align-items-center pt-5">
             <div class="title d-flex flex-column justify-content-center align-items-center">
                 <h1>HUGEgym</h1>
-                <h2>The Journey Starts Here</h2>
+                <h2>IT STARTS HERE</h2>
             </div>
             <div class="title-tabs d-flex justify-content-center gap-3 pt-3 ">
-                <a href="#signup" class="btn btn-outline-danger">Sign Me Up!</a>
-                <a href="#freepass" class="btn btn-outline-danger">Get a FREE PASS</a>
+                <a href="#signmeup" class="btn btn-outline-danger">Sign Me Up!</a>
+                <a href="#signmeup" class="btn btn-outline-danger">Get a FREE PASS</a>
             </div>
         </div>
       </section>
@@ -80,19 +83,22 @@
                     
                 </div>
             </div>
-            <div class="row d-flex  gap-3">
-                <img src="./images/gym1.jpg" alt="gym1" class="image-fluid" style="max-width: 400px;">
-                <img src="./images/gym2.jpg" alt="gym2" class="image-fluid" style="max-width: 400px;" >
-                <img src="./images/gym3.jpg" alt="gym3" class="image-fluid" style="max-width: 400px;">
-                <img src="./images/gym4.jpg" alt="gym4" class="image-fluid" style="max-width: 400px;">
+            <div class="row " id="galleryContainer">
+                <a href="https://i.postimg.cc/G3f41hzM/gym1.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="item"><img src="https://i.postimg.cc/G3f41hzM/gym1.jpg" class="img-fluid"></a>
+                <a href="https://i.postimg.cc/kg3DB10K/gym2.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="item"><img src="https://i.postimg.cc/kg3DB10K/gym2.jpg" class="img-fluid"></a>
+                <a href="https://i.postimg.cc/Y0T0Nbhc/gym5.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="item"><img src="https://i.postimg.cc/Y0T0Nbhc/gym5.jpg" class="img-fluid"></a>
+                <a href="https://i.postimg.cc/xCxc80Q1/gym3.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="item"><img src="https://i.postimg.cc/xCxc80Q1/gym3.jpg" class="img-fluid"></a>
+                <a href="https://i.postimg.cc/kG2DtkMF/gym4.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="item"><img src="https://i.postimg.cc/kG2DtkMF/gym4.jpg" class="img-fluid"></a>
+                <a href="https://i.postimg.cc/yd9mtQSP/marlon-silva-W79-G7k-IZ5-OE-unsplash.jpg" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4" id="item"><img src="https://i.postimg.cc/yd9mtQSP/marlon-silva-W79-G7k-IZ5-OE-unsplash.jpg" class="img-fluid"></a>
+                
             </div>
         </div>
      </section>
 
-     <section id="classes" class="classes">
-         <div class="container-for-class bg-light shadow-sm mt-1 p-3">
+     <section id="classes" class="classes ">
+         <div class="container-fluid bg-dark p-3">
         <div class="section-title d-flex justify-content-center ">
-            <h2 class="text-danger "> CLASSES</h2>
+            <h2 class="text-danger pb-2 "> What We Offer</h2>
         </div>
          <div class="cards-container d-flex flex-wrap gap-3 justify-content-center ">
             <div class="card-container">
@@ -124,7 +130,7 @@
               <div class="front">
                 <img src="./images/calorie.png" class="image-fluid"></span>
               </div>
-              <div class="back">Calorie Shredder</div>
+              <div class="back text-center">Calorie Shredder</div>
             </div>
           </div>
           <div class="card-container">
@@ -132,7 +138,7 @@
               <div class="front">
                 <img src="./images/arena.png" class="image-fluid"></span>
               </div>
-              <div class="back">Full Body arena</div>
+              <div class="back text-center">Full Body arena</div>
             </div>
           </div>
           <div class="card-container">
@@ -165,7 +171,9 @@
 
      <!-- TRAINERS -->
      <section id="trainers" class="trainers bg-dark p-5">
-        <div class="staff-container row d-flex flex-wrap justify-content-between align-items-center">
+      <h2 class="text-center">Meet Your Trainers</h2>
+        <div class="staff-container row d-flex flex-wrap justify-content-around ">
+
           <div class="staff-card col-md-3 mt-2 d-flex flex-column justify-content-center align-items-center">
             <img src="./images/trainer1.jpg" class="trainer-img p-2" style="height: 200px; width:150px;">
               <div class="trainer-details ">
@@ -213,182 +221,16 @@
         </div>
      </section>
      
-     <!-- TIMETABLE -->
-     <section id="specials" class="specials">
-      <div class="container p-5">
-        <div class="section-title text-center">
-          <h3>TIMETABLE</h3>
-          <p>
-            MAKE BEING BETTER A PRIORITY. STOP THE EXCUSES. IT'S TIME
-          </p>
-        </div>
-        <div class="d-flex align-items-start">
-          <div
-            class="nav flex-column nav-pills me-3 special-list"
-            id="v-pills-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
-            <button
-              class="nav-link active"
-              id="mon-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#monday"
-              type="button"
-              role="tab"
-              aria-controls="monday"
-              aria-selected="true"
-            >
-              MONDAY
-            </button>
-            <button
-              class="nav-link"
-              id="tues-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#tuesday"
-              type="button"
-              role="tab"
-              aria-controls="tuesday"
-              aria-selected="false"
-            >
-              TUESDAY
-            </button>
-            <button
-              class="nav-link"
-              id="wed-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#wednesday"
-              type="button"
-              role="tab"
-              aria-controls="wednesday"
-              aria-selected="false"
-            >
-              WEDNESDAY
-            </button>
-            <button
-              class="nav-link"
-              id="thurs-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#thursday"
-              type="button"
-              role="tab"
-              aria-controls="thursday"
-              aria-selected="false"
-            >
-              THURSDAY
-            </button>
-            <button
-              class="nav-link"
-              id="fri-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#friday"
-              type="button"
-              role="tab"
-              aria-controls="friday"
-              aria-selected="false"
-            >
-              FRIDAY
-            </button>
-          </div>
-          <div class="tab-content" id="v-pills-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="monday"
-              role="tabpanel"
-              aria-labelledby="mon-tab"
-            >
-              <div class="row d-flex flex-wrap">
-                <div class="col-lg-8 order-2 order-lg-1">
-                  <h3>Buy 1 get 1 free burgers</h3>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam est voluptas maiores quae minus alias sequi, rem
-                    suscipit velit?
-                  </p>
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img
-                    src="./images/burger.jpg"
-                    class="img-fluid rounded-circle"
-                    style="width: 200px; height: 200px"
-                    alt="burger"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="tuesday"
-              role="tabpanel"
-              aria-labelledby="tues-tab"
-            >
-              <div class="row d-flex flex-wrap">
-                <div class="col-lg-8 order-2 order-lg-1">
-                  <h3>Happy Hour</h3>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam est voluptas maiores quae minus alias sequi, rem
-                    suscipit velit?
-                  </p>
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img
-                    src="./images/drinks.jpg"
-                    class="img-fluid rounded-circle"
-                    style="width: 200px; height: 200px"
-                    alt="drinks"
-                  />
-                </div>
-              </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="wednesday"
-              role="tabpanel"
-              aria-labelledby="wed-tab"
-            >
-              <div class="row d-flex flex-wrap">
-                <div class="col-lg-8 order-2 order-lg-1">
-                  <h3>Eat on Us for your birthday</h3>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Nam est voluptas maiores quae minus alias sequi, rem
-                    suscipit velit?
-                  </p>
-                </div>
-                <div class="col-lg-4 text-center order-1 order-lg-2">
-                  <img
-                    src="./images/birthday.jpg"
-                    class="img-fluid rounded-circle"
-                    style="width: 200px; height: 200px"
-                    alt="birthday"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
        <!-- memberships -->
-       <section id="pricing" class="bg-dark mt-5 ">
+       <section id="pricing" class="bg-dark  ">
         <div class="container-fluid">
           <div class="text-center">
             <h2>Pricing Plans</h2>
             <p class="lead text-muted">Choose a membership plan to suit you.</p>
           </div>
   
-          <div class="row my-5 pb-5 g-0 align-items-center justify-content-center">
+          <div class="row  pb-5 g-0 align-items-center justify-content-center">
             <div class="col-8 col-lg-4 col-xl-3">
               <div class="member-card border-0" id="young">
                 <div class="card-body text-center py-4">
@@ -450,24 +292,24 @@
         <!-- end container -->
       </section>
     <!-- contact -->
-    <section id="signmeup" class="p-5">
-      <div class="pagebreak-container" >
+    <section id="signmeup" class=" bg-dark p-5">
+      <div class="container-fluid bg-dark" >
             <div class="section-title">
-                <h1>SIGN ME UP</h1>
+                <h2 class="text-center">SIGN ME UP</h2>
                 
             </div>
       </div>
-      <div class="contact container pb-3">
+      <div class="contact container-fluid pb-3">
             <div class="row d-flex flex-wrap justify-content-between ">
                 <div class="col-lg-6">
-                    <h3>SAY HELLO</h3>
+                    <h3 class="text-light ">SAY HELLO</h3>
                 </div>
                 <div class="col-lg-3">
-                    <h5>LOCATION</h5>
-                    <p>Cape Town, South AFrica</p>
+                    <h5 class="text-light">LOCATION</h5>
+                    <p class="text-light">Cape Town, South AFrica</p>
                 </div>
-                <div class="col-lg-3">
-                    <h5>REACH ME</h5>
+                <div class="col-lg-3 text-light">
+                    <h5 >REACH ME</h5>
                     <p>076 719 4703</p>
                 </div>
             </div>
@@ -495,7 +337,7 @@
                         <label for="floatingTextarea">Message</label>
                         </div>
                         
-                        <button type="submit" class="btn btn-outline-dark">Send</button>
+                        <button type="submit" class="btn btn-outline-danger">Send</button>
                     </div>
             </div>
         </div>
@@ -506,5 +348,6 @@
     <script src="jquery.min.js"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.0/dist/index.bundle.min.js"></script>
 </body>
 </html>
